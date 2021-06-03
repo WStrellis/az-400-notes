@@ -13,5 +13,41 @@ When file system logging is enabled it will only save logs for 12h(default) to p
 - Blob Container - logs are stored in year, month, day , and hour folders
 - Linux - logs are stored in underlying docker container that runs the app
 
+# App Center
+App Center is used to develop, build, test, and deploy mobile apps.  
+It supports iOS, Android, UWP( universal windows platform), and tvOS apps. They  can be build in any language.
+
+*Continuous Integration* - the practice of frequently running source code through various processes to ensure it is in a known-working state.
+
+*Continuous Delivery* - the ability to deploy a new version of an app automatically to multiple environments.
+
+### App Center Test
+Runs automated UI tests on native and hybrid mobile apps. Run agains physical devices in a MS data center.  
+- test results are maintained for six months
+
+*Device Configuration* - combination of device model and operating system version  
+
+*Device Tier* - tests can be run on a variety of real devices
+- Tier 1 - popular mobile devices
+- Tier 2 - less popular
+- Tier 3 - uncommon devices
+
+
+*Device Set* - collection of Device Configurations  
+
+### Distribution
+Apps can be distrubuted to users or an app store.
+- *Distribution Group* - a collection of users who have access to a specific build(s) of an app. Members of a Distribution Group will receive email notifications about new releases.
+    - Private - only users invited by email can access releases
+    - Public - allows unauthenticated installed of a release from public links
+- *Shared Distribution Group* - A Distribution Group that is used for multiple apps
+
+### Diagnostics
+The App Center SDK is available with resources to send app crash logs to App Center for analysis.  
+- data can be stored for 90 or 28 days
+
+
+
+
 
 
