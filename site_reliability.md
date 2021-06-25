@@ -27,3 +27,14 @@ Levels Of Replication
 - *N+1* - for an app that needs N nodes to function, one extra resource is provisioned as a failsafe.
 - *2N* - One extra node is provisioned for every node ( double )
 - *2N+1* - All nodes are duplicated, plus extras
+
+*Tail Latency* - In a service which must perform many calculations on many individual servers all of the servers are expected to complete their task within a short period of time. If one of the servers takes an excessive amount of time to complete its work then the final response time to the client will be increased beyond the acceptable amount.
+
+### Load Balancer
+- Only handles port-forwarding for TCP and UDP traffic
+- Operates on Layer 4 of ISO network stack
+- cannot manipulate contents of network packets
+- cannot route based on packet content
+
+Which tools can be used to test network connectivity for VMs behind a Load Balancer?  
+`PsPing`, `tcping`, and `netsh`. `ping` will not work because it uses an ICMP connection which Load Balancer will not route.   
