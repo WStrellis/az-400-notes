@@ -5,6 +5,10 @@ Azure AD can be used in conjuction with on-prem AD.
 - *Pass-Through Authentication* - an Azure AD agent is installed on an on-prem server. When an Azure AD user tries to authenticate it is handled by the on-prem server.
 - *Federated Authentication*  - Authentication is handled by on-prem AD Federation Service. Supports smart cards.
 
+Produces two types of logs:
+- *Sign-in* - information about sign-in activity
+- *Audit* - a record of what users did
+
 ### Features
 - *Azure AD B2B* - allows you to invite external users to your tenant, such as contractors
 - *Azure AD Application Proxy* - add on-prem apps to Azure AD tenant
@@ -60,3 +64,18 @@ Three Scope Levels:
 - *All* - allows access to all apis from the gateway
 - *Single* - allows access to a specific endpoint on the gateway
 - *Product* - a collection of APIs on the gateway
+
+# Azure Security Center
+- configure Just-in-time ssh/rdp access
+- monitor security settings in cloud and on-prem
+- automatically apply security settings to new resources
+- identifies potential vulnerabilites
+- detects and blocks malware from being installed on VMs
+
+# Azure Sentinel
+- collects data from cloud( only cloud)
+- detects threats by analyzing data
+- tools to investigate incidents
+- tools to respond to incidents
+- send alerts 
+- utilizes Azure Monitor Workbooks to automate responses to threats
