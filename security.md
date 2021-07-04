@@ -79,3 +79,6 @@ Three Scope Levels:
 - tools to respond to incidents
 - send alerts 
 - utilizes Azure Monitor Workbooks to automate responses to threats
+
+# Azure Blueprints
+Templates which allow Cloud Managers to created reuseable templates for deploying policies across multiple subscriptions and resource groups. They combine ARM Templates, RBAC, and policies into a single template.
