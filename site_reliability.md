@@ -38,3 +38,20 @@ Levels Of Replication
 
 Which tools can be used to test network connectivity for VMs behind a Load Balancer?  
 `PsPing`, `tcping`, and `netsh`. `ping` will not work because it uses an ICMP connection which Load Balancer will not route.   
+
+Setup Load Balancer:  
+- Create vms with static IP. Disable public ip on vms.
+- create load balancer
+- Add vms to LB Backend Pool
+- Configure LB Health Probe
+- Configure LB Load Balancing Rules
+
+### VM Scale Sets
+When a VM goes beyond its CPU utilization threshold a new VM(s) will be be deployed to help handle the load. Any applications on the original VM will need to be installed on the new VM(s). This can be accomplished using Azure Custom Script Extension.
+- uses Health Probe checkes similar to Load Balancer
+- if a machine fails its health check it will be marked as "unhealthy". If it does not pass the health check within the Grace Period it will be replaced with a new vm.
+
+### Monitoring and Logging
+*Log Analytics* - Stores logs for all services. Can perform queries and perform analytics on logs.
+*Application Insights* - Generates usage data of application
+*Azure Monitor Metrics* - Create custom dashboards
